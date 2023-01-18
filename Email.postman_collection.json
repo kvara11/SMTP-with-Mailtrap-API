@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "621c9dbc-fd38-4fab-a015-149f4c558eb4",
+		"name": "Email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Email Send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/mail/send?to_mail=google@gmail&to_name=Tony&subject=Web&text=Hello Google",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mail",
+						"send"
+					],
+					"query": [
+						{
+							"key": "to_mail",
+							"value": "google@gmail"
+						},
+						{
+							"key": "to_name",
+							"value": "Tony"
+						},
+						{
+							"key": "subject",
+							"value": "Web"
+						},
+						{
+							"key": "text",
+							"value": "Hello Google"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
